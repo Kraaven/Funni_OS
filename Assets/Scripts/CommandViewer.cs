@@ -41,23 +41,23 @@ public class CommandViewer : MonoBehaviour
         }
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            InsertString($"Random: {GetString()}");
-        }
-    }
+    // private void Update()
+    // {
+    //     if (Input.GetKeyDown(KeyCode.Space))
+    //     {
+    //         InsertString($"Random: {GetString()}");
+    //     }
+    // }
 
-    public string GetString()
-    {
-        string msg = "";
-
-        for (int i = 0; i < Random.Range(5,30); i++)
-        {
-            msg += Random.Range(1, 10000);
-        }
-
-        return msg;
-    }
+    // public string GetString()
+    // {
+    //     string msg = "";
+    //
+    //     for (int i = 0; i < Random.Range(5,30); i++)
+    //     {
+    //         msg += Random.Range(1, 10000);
+    //     }
+    //
+    //     return msg;
+    // }
 }
